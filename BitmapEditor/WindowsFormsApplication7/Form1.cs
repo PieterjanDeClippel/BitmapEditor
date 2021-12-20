@@ -107,5 +107,10 @@ namespace WindowsFormsApplication7
 				afbeeldingEditor1.Afbeelding.AntiAlias = checkBox1.Checked;
 			afbeeldingEditor1.Invalidate();
 		}
-	}
+
+        private void chkShowGlyphs_CheckedChanged(object sender, EventArgs e)
+        {
+			afbeeldingEditor1.ShowGlyphs = chkShowGlyphs.Checked;
+        }
+    }
 }
